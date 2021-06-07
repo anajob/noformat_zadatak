@@ -1,0 +1,79 @@
+$heading-font: "Poppins", sans-serif;
+$text-font: "Roboto", sans-serif;
+$main-background-color: radial-gradient(
+  84.37% 84.37% at 50% 50%,
+  rgba(196, 196, 196, 0) 36.99%,
+  rgba(196, 196, 196, 0.51) 100%
+);
+$primary-text-color: #ed1c24;
+
+@import "header.scss";
+@import "central-section.scss";
+@import "admissions-section.scss";
+@import "footer.scss";
+@import "floating-btns.scss";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+h1,
+h5,
+h6,
+h3 {
+  font-family: $heading-font;
+  font-weight: 700;
+}
+
+body {
+  background: $main-background-color;
+}
+
+.main-content-wrapper {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 240px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.remove {
+  display: none;
+}
+
+[data-aos="opacity-animation"] {
+  opacity: 0;
+  transition-property: transform, opacity;
+
+  &.aos-animate {
+    opacity: 1;
+  }
+}
+[data-aos="color-animation"] {
+  color: rgb(165, 113, 113);
+  transition-property: transform, color;
+
+  &.aos-animate {
+    color: rgba(237, 28, 36, 1);
+  }
+}

@@ -1,0 +1,59 @@
+.dotted-background-img {
+  position: fixed;
+  right: calc(50% - 290px - 500px);
+  z-index: -1;
+  img {
+    border-radius: 100%;
+    object-fit: fill;
+    z-index: -1;
+    width: 585px;
+    height: 585px;
+  }
+}
+
+.scroll-down-btn {
+  position: absolute;
+  top: 245px;
+  .btn-text {
+    transform: rotate(90deg);
+    width: 87px;
+    font-size: 8px;
+    font-family: $heading-font;
+    line-height: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+  }
+
+  .arrow-icon {
+    transform: translate(40px, 50px);
+  }
+}
+
+.floating-apply-btn {
+  position: fixed;
+  right: 40px;
+  top: 540px;
+  background-color: $primary-text-color;
+  color: #fff;
+  width: 80px;
+  height: 80px;
+  border-radius: 100%;
+  font-size: 12px;
+  line-height: 14px;
+  font-family: $heading-font;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px;
+  z-index: 3;
+  transition: all 0.2s ease-in-out;
+  &:hover {
+    transform: scale(1.2);
+  }
+  text-align: center;
+
+  &--hidden {
+    transform: translateX(200px);
+  }
+}
